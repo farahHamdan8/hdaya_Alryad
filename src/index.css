@@ -1,0 +1,62 @@
+﻿@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom Luxury Scrollbars */
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(194, 24, 91, 0.25);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(194, 24, 91, 0.55);
+}
+
+/* Luxury Calligraphy Styles */
+.font-calligraphy-ar {
+  font-family: 'Amiri', serif;
+  font-style: italic;
+}
+
+.font-calligraphy-en {
+  font-family: 'Cormorant Garamond', 'Playfair Display', serif;
+  font-style: italic;
+}
+
+/* Shimmer & Glow Effects */
+.luxury-glow {
+  box-shadow: 0 0 35px -5px rgba(194, 24, 91, 0.25);
+}
+
+.gold-glow {
+  box-shadow: 0 0 35px -5px rgba(212, 175, 55, 0.3);
+}
+
+.glass-luxury-dark {
+  background: rgba(26, 26, 30, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(194, 24, 91, 0.15);
+}
+
+.glass-luxury-light {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(194, 24, 91, 0.1);
+}
